@@ -32,6 +32,7 @@ public class HelloController {
     }
 
     public void onMegnyitasClick(ActionEvent e){
+        fc.getExtensionFilters().add(new FileChooser.ExtensionFilter("csak CSV", "*.csv"));
         fc.setInitialDirectory(new File("./"));
         File fbe = fc.showOpenDialog(folista.getScene().getWindow());
         readdata(fbe);
