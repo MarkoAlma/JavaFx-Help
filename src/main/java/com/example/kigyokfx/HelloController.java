@@ -38,7 +38,8 @@ public class HelloController {
     }
 
     public void readdata(File fbe){
-        kigyokLista.clear();//ha többször megnyitjuk duplázódnak az adatok
+        kigyokLista.clear();
+        folista.getItems.clear();
         try {
             Scanner beolvas = new Scanner(fbe);
             beolvas.nextLine();
