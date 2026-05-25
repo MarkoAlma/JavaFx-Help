@@ -39,7 +39,7 @@ public class HelloController {
 
     public void readdata(File fbe){
         kigyokLista.clear();
-        folista.getItems.clear();
+        folista.getItems().clear();
         try {
             Scanner beolvas = new Scanner(fbe);
             beolvas.nextLine();
